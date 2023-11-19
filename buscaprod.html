@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Maria Gabriela Mariano">
+    <title>Gerenciamento de Produto</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="../css/buscar.css">
+</head>
+  <body>
+    <nav class="navbar is-danger" role="navigation" aria-label="main navigation">
+      <a role="button" class="navbar-burger is-active" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+          <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+              <a href="index.html" class="navbar-item">
+                Home
+              </a>
+              <a href="login.html" class="navbar-item">
+                Login
+              </a>
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                  Usuarios
+                </a>
+                  <div class="navbar-dropdown">
+                    <a href="criaruser.html" class="navbar-item">
+                      Criar Usuarios
+                    </a>
+                    <a href="buscauser.html" class="navbar-item">
+                      Buscar Usuarios
+                    </a>
+                    <a href="todosuser.html" class="navbar-item">
+                      Todos os Usuarios
+                    </a>
+                  </div>
+              </div>
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">
+                Produtos
+              </a>
+              <div class="navbar-dropdown">
+                <a href="criarprod.html" class="navbar-item">
+                  Criar Produtos
+                </a>
+                <a href="buscaprod.html" class="navbar-item">
+                  Buscar Produtos
+                </a>
+                <a href="todosprod.html" class="navbar-item">
+                  Todos os Produtos
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+     </nav><br>
+
+    <div class="field" id="buscar">
+      <h3>Buscar Produto</h3><br>
+      <label for="getProdId">ID do Produto:</label><br>
+      <input type="number" id="getProdId"><br><br>
+      <button class="button is-primary" id="btn2" onclick="getProd()">Buscar</button><br><br>
+
+      <h3>Gerenciar Produtos</h3><br>
+      <label for="Nome">Nome:</label><br>
+      <input type="text" id="nomeprod"><br>
+
+      <label for="inpuNome">Preco:</label><br>
+      <input type="text" id="inputPreco"><br>
+
+      <label for="inpuNome">Quantidade:</label><br>
+      <input type="text" id="inputQuantidade"><br><br>
+
+      <button class="button is-primary" id="btn2" onclick="updateProd()">Atualizar</button><br>
+      <button class="button is-primary" id="btn2" onclick="deleteProd()">Excluir</button><br>
+    </div>
+    <script src="js/getProd.js"></script>
+    <script src="js/updateProd.js"></script>
+    <script src="js/deleteProd.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

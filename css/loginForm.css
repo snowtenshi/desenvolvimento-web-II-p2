@@ -1,0 +1,25 @@
+body {
+  margin: 10px;
+  background-color: #f4a7af;
+  background-image:  radial-gradient(#dd1e09 0.5px, transparent 0.5px), radial-gradient(#FCB9B2 0.5px, #fbf1f2 0.5px);
+  background-size: 20px 20px;
+  background-position: 0 0,10px 10px;
+}
+
+label {
+  color: black;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.formulario {
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  margin: auto;
+  width: 18rem;
+  height: 15rem;
+  background-color: #bcb5f1;
+  border-radius: 2%;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: large;
+}

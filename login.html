@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Maria Gabriela Mariano">
+    <title>Pagina Inicial</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/loginForm.css">
+  </head>
+  <body>
+    <nav class="navbar is-danger" role="navigation" aria-label="main navigation">
+        <a role="button" class="navbar-burger is-active" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a href="index.html" class="navbar-item">
+            Home
+          </a>
+          <a href="login.html" class="navbar-item">
+            Login
+          </a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              Usuarios
+            </a>
+              <div class="navbar-dropdown">
+                <a href="criaruser.html" class="navbar-item">
+                  Criar Usuarios
+                </a>
+                <a href="buscauser.html" class="navbar-item">
+                  Buscar Usuarios
+                </a>
+                <a href="todosuser.html" class="navbar-item">
+                  Todos os Usuarios
+                </a>
+              </div>
+        </div>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Produtos
+          </a>
+            <div class="navbar-dropdown">
+              <a href="criarprod.html" class="navbar-item">
+                Criar Produtos
+              </a>
+              <a href="buscaprod.html" class="navbar-item">
+                Buscar Produtos
+              </a>
+              <a href="todosprod.html" class="navbar-item">
+                Todos os Produtos
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+  <h1>Login</h1>
+  <div class="formulario">
+    <div class="" id="loginForm" method="post">
+      <div>
+        <label for="emailInput">Email:</label><br>
+        <input type="text" id="emailInput" name="emailInput" required></input>
+      </div>
+      <div>
+        <label for="passwordInput">Password:</label><br>
+        <input type="password" id="passwordInput" name="passwordInput" required></input>
+      </div><br>
+      <button class="button is-primary" type="button" id="loginSubmit" value="Login">Login</button>
+    </div>
+  </div><br>
+  <script src="js/login.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Maria Gabriela Mariano">
+    <title>Gerenciamento de Usuario</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="../css/buscar.css">
+    <link rel="stylesheet" href="../css/leaflet.css">
+    <script src="js/leaflet.js"></script>
+</head>
+  <body>
+    <nav class="navbar is-danger" role="navigation" aria-label="main navigation">
+      <a role="button" class="navbar-burger is-active" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+          <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+              <a href="index.html" class="navbar-item">
+                Home
+              </a>
+              <a href="login.html" class="navbar-item">
+                Login
+              </a>
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                  Usuarios
+                </a>
+                  <div class="navbar-dropdown">
+                    <a href="criaruser.html" class="navbar-item">
+                      Criar Usuarios
+                    </a>
+                    <a href="buscauser.html" class="navbar-item">
+                      Buscar Usuarios
+                    </a>
+                    <a href="todosuser.html" class="navbar-item">
+                      Todos os Usuarios
+                    </a>
+                  </div>
+              </div>
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">
+                Produtos
+              </a>
+              <div class="navbar-dropdown">
+                <a href="criarprod.html" class="navbar-item">
+                  Criar Produtos
+                </a>
+                <a href="buscaprod.html" class="navbar-item">
+                  Buscar Produtos
+                </a>
+                <a href="todosprod.html" class="navbar-item">
+                  Todos os Produtos
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+     </nav>
+
+    <section class="section">
+    <div id="buscar">
+      <h3>Buscar Usuario</h3>
+      <label for="getUserId">ID do Usuario:</label><br>
+      <input type="number" id="getUserId"><br><br>
+      <button class="button is-primary" id="btn2" onclick="getUser()">Buscar</button><br>
+
+      <h3>Gerenciar Usuario</h3>
+      <label for="inpuNome">Nome:</label><br>
+      <input type="text" id="inpuNome"><br>
+      <label for="inputEmail">Email:</label><br>
+      <input type="text" id="inputEmail"><br><br>
+
+      <button class="button is-primary" id="btn2" onclick="updateUser()">Atualizar</button><br>
+      <button class="button is-primary" id="btn2" onclick="deleteUser()">Excluir</button><br>
+      <button class="js-modal-trigger button is-primary" data-target="modal-js-example">Visualizar Mapa</button><br>
+
+    </div>
+    </section>
+
+    <div id="modal-js-example" class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-content">
+        <div class="box">
+          <p>Mapa</p>
+          <form id="form-endereco">
+            <h3>Endereco</h3>
+              <label for="cep">Cep:</label><br>
+              <input name="cep" type="text" id="cep" value="" onblur="pesquisacep(this.value);"><br><br>
+    
+              <label for="endereco">Rua:</label><br>
+              <input name="endereco" type="text" id="endereco"><br><br>
+    
+              <label for="bairro">Bairro:</label><br>
+              <input name="bairro" type="text" id="bairro"><br><br>
+    
+              <label for="cidade">Cidade:</label><br>
+              <input name="cidade" type="text" id="cidade"><br><br>
+    
+              <label for="uf">Estado:</label><br>
+              <input name="uf" type="text" id="uf">
+            </form>
+            <br>
+    
+            <div id="message-text"></div>
+            <input name="utmx" type="text" id="utmx"><br>
+            <input name="utmy" type="text" id="utmy"><br>
+    
+            <button class="button is-primary" id="btn2" onclick="updateEnde()">Atualizar Endereco</button><br>
+          <div id="mapid" style="width: auto; height: 450px;"></div>
+        </div>
+      </div>
+      <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+    
+    <script src="js/getUser.js"></script>
+    <script src="js/updateUser.js"></script>
+    <script src="js/updateEnde.js"></script>
+    <script src="js/deleteUser.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/mapa.js"></script>
+  </body>
+</html>

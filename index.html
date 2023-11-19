@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Maria Gabriela Mariano">
+    <title>Pagina Inicial</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <script src="js/x.js"></script>
+  </head>
+  <body>
+    <nav class="navbar is-danger" role="navigation" aria-label="main navigation">
+        <a role="button" class="navbar-burger is-active" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a href="login.html" class="navbar-item">
+            Login
+          </a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              Usuarios
+            </a>
+              <div class="navbar-dropdown">
+                <a href="criaruser.html" class="navbar-item">
+                  Criar Usuarios
+                </a>
+                <a href="buscauser.html" class="navbar-item">
+                  Buscar Usuarios
+                </a>
+                <a href="todosuser.html" class="navbar-item">
+                  Todos os Usuarios
+                </a>
+              </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Produtos
+          </a>
+            <div class="navbar-dropdown">
+              <a href="criarprod.html" class="navbar-item">
+                Criar Produtos
+              </a>
+              <a href="buscaprod.html" class="navbar-item">
+                Buscar Produtos
+              </a>
+              <a href="todosprod.html" class="navbar-item">
+                Todos os Produtos
+              </a>
+            </div>
+        </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="block" id="image">
+      <div class="block" id="player_musica">
+        <audio src="lofi.mp3" controls>
+          <p>If you are reading this, it is because your browser does not support the audio element.</p>
+        </audio>
+      </div>
+    </section>
+    
+    <section>
+      <article class="block">
+          <h1>Projeto de Estudo para Aula de Desenvolvimento Web II</h1>
+      </article>
+    </section>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
