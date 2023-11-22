@@ -4,8 +4,3 @@ Este sistema possui uma interface de usuário interativa que se conecta a um ban
 O sistema foi construido com PHP, HTML, CSS e JavaScript.
 
 O front-end foi desenvolvido com o framework de CSS Bulma, garantindo que a interface seja funcional, visualmente atraente e responsiva para diferentes dispositivos.
-
-## Para logar
-
-email: admin@email.com
-senha: admin
